@@ -1,0 +1,70 @@
+form {
+    width: 80%;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+}
+
+form input {
+    display: block;
+    width: 30%;
+    padding: .1rem;
+    margin: .2rem;
+    margin-bottom: .8rem;
+}
+
+form label {
+    margin-left: .2rem;
+}
+
+input[type="submit"] {
+    width: 20%;
+    position: relative;
+    left: 5%;
+    height: 2rem;
+}
+
+/* This is our style for the invalid fields */
+  
+input:focus:invalid, .invalid-pass {
+    border-color: #900;
+    background-color: #FDD;
+    outline: none;
+}
+  
+  /* This is the style of our error messages */
+
+.error {
+    width: 30%;
+    padding: 0;
+    display: block;
+    font-size: 90%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: .5%;
+    
+  }
+  
+  .error.active {
+    padding: 0.7rem;
+    margin-top: -1.2%;
+    margin-bottom: 1%;
+  }
+
+  h1 {
+    position: absolute;
+    width: auto;
+    top: 10%;
+    right: 0;
+    left: 0;
+    height: 450px;
+    text-align: center;
+    font-size: 6em;
+    background: rgba(255, 255, 255, 0.8) 
+           url("https://images.unsplash.com/photo-1534551767192-78b8dd45b51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+  }

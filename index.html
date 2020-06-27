@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Form </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <form novalidate>
+            <label for="mail"> <span> Enter your email: </span> 
+                <input type="email" id="mail" name="mail" minlength="8" required>
+                <span id="mail-message" class="error" aria-live="polite"></span>
+            </label>
+            <label for="country"> <span> Enter your country of birth: </span>
+                <input type="text" id="country" name="country" minlength="4" maxlength="63" pattern="^[A-Za-z ]+$" required>
+                <span id="country-message" class="error" aria-live="polite"></span>
+            </label>
+            <label for="zip-code"> <span> Enter your zip code (US Only): </span>
+                <input type="text" id="zip-code" name="zip-code" minlength="5" maxlength="10" pattern="[\d]{5}(-[\d]{4})?" required>
+                <span id="zip-code-message" class="error" aria-live="polite"></span>
+            </label>
+            <label for="password"> <span> Enter your password: </span>
+                <input type="password" id="password" name="password" 
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                <span id="password-message" class="error" aria-live="polite"></span>
+            </label>
+            <label for="password-conf"> <span> Confirm your password: </span>
+                <input type="password" id="password-conf" name="password-conf" required>
+                <span id="password-conf-message" class="error" aria-live="polite"></span>
+            </label>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
